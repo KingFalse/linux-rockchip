@@ -10,7 +10,6 @@ jobs:
   Build:
     name: Compile kernel
     runs-on: rockchip
-    if: ${{ github.repository_owner == 'armbian' }}
     env:
       OCI_TARGET_BASE: "ghcr.io/${{ github.repository }}/" # This is picked up by the Docker launcher automatically
     steps:
